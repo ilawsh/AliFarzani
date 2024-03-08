@@ -62,7 +62,7 @@
 
     .section-sec{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         margin-top: -5px;
         transition: all 0.7s ease;
@@ -162,7 +162,8 @@
     }
 
     .main-1-2-1{
-        text-align: center;
+        text-align: left;
+        margin-top: 40px;
     }
 
     .main-1-2-1 h6{

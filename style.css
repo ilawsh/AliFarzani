@@ -101,23 +101,23 @@ body{
     width: 250px;
     height: 250px;
     border: 3px solid #2d2e32;
-    border-radius: 50% 80% 30% 70%/60% 30% 70% 40%;
-    animation: move 7s infinite;
+    /* border-radius: 50% 80% 30% 70%/60% 30% 70% 40%; */
+    animation: move1 2s infinite forwards;
 }
 
-@keyframes move {
+@keyframes move1 {
     0%{
       
-        border-radius: 95% 95% 95% 95%
+        border-radius:95% 95% 95% 95%
     };
     25%{
-        border-radius: 65% 65% 65% 65%
+        border-radius: 70% 90% 80% 90%
     };
     50%{
-        border-radius: 55% 55% 55% 55%
+        border-radius: 42% 53% 70% 80%
     };
     75%{
-        border-radius: 65% 65% 65% 65%
+        border-radius: 44% 30% 70% 62%
     }
     100%{
     
@@ -170,13 +170,13 @@ body{
 
 .left-side-sec {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(-100px);
     animation: moveright 1.5s linear forwards;
 }
 
 .right-side-sec {
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(100px);
     animation: moveright 1.5s linear forwards;
 } 
 
