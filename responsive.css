@@ -1,0 +1,239 @@
+.responsive-menu {
+    display: none;
+    direction: rtl;
+    margin: 20px;
+}
+
+.responsive-menu a {
+    color: black;
+    font-size: 35px;
+}
+
+
+.backGround-menu div {
+    width: 100%;
+}
+
+.backGround-menu div a {
+    transition: all 0.5s;
+    display: block;
+}
+
+.backGround-menu a:hover{
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+}
+
+.responsive-menu h1{
+    font-size: 17px;
+}
+
+.backGround-menu {
+    display: none;
+    overflow-x : hidden;
+}
+
+
+.backGround-menu  i{
+    font-size: 30px;
+    margin-right: -80%;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+#x{
+    display:none;
+}
+
+
+
+@media  screen and (max-width:801px) {
+    .header-sec{
+        display: none;
+    }
+    
+    .responsive-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-sec{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: -5px;
+        transition: all 0.7s ease;
+    }
+    
+    .left-side-sec{
+        margin: 0 50%;
+        line-height: 1.5;
+    } 
+
+    .left-side-sec div{
+        text-align: center;
+    }
+
+    .left-side-sec div a {
+        padding: 1px 5%;
+    }
+
+    .sech1{
+        margin-top: -28px;
+    }
+
+    .secp{
+        margin-top: -11px;
+    }
+
+    .right-side-sec{
+        margin: 40px 50%;
+    }
+
+    .backGround-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        position: fixed;
+        z-index: 1;
+        width: 0%;
+        background-color: #EDEDED;
+        height: 100vh;
+        right: 0%;
+        top: 0%;
+        border-radius: 20px 0px 0px 20px;
+        transition: all 0.7s ease;
+        overflow-x: hidden;
+    }  
+
+    .backGround-menu div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .backGround-menu div a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        padding: 25px 4%;
+    }
+
+    .backGround-menu a {
+        display: inline-block;
+    }
+    
+    #x{
+        display: block;
+    }
+
+    .section-sec-2 {
+        margin-top: -100px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-sec-2 h6 {
+        font-size: 20px;
+        border: none;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #C7C8CC;
+    }
+
+    .i-icon  , .i-icon-2 {
+        margin-left: 0;
+        font-size: 55px;
+    }
+
+    .i-icon:hover{
+        margin: 0px;
+    }
+    
+    .i-icon-2:hover{
+        margin: 0px;
+    }
+
+    .main-1-2 {
+        text-align: center;
+    }
+
+    .main-1-2-1{
+        text-align: center;
+    }
+
+    .main-1-2-1 h6{
+        font-size: 18px;
+    }
+
+    .main-1-2-2 {
+        text-align: left;
+
+    }
+
+    .main-1-2-3 {
+        margin-top: 25px;
+        text-align: left;
+    }
+    
+}
+
+
+@media screen and (min-width:801px) {
+    
+    .header-sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-side-nav{
+        opacity: 0;
+    }
+
+    .right-side-sec{
+        margin:0 10%;
+    }
+
+    .left-side-sec{
+        margin: 0 10%;
+        line-height: 1.5;
+    }
+
+    .sech1{
+        margin-top: -28px;
+    }
+
+    .secp{
+        margin-top: -11px;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+
+    .header-sec{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .left-side-nav{
+        opacity: 1;
+    }
+    
+}
+
+@media screen and (min-width:1300px) {
+    
+    .left-side-nav{
+        margin-left: -700px;
+    }
+    
+    .right-side-nav{
+        margin-right: -700px;
+    }
+}
+
+
