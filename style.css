@@ -126,6 +126,7 @@ body{
 .section-sec-2 h6{
     font-size: 15px;
     border-right: 2px solid #C7C8CC;
+    border-radius: 1px;
     padding-right: 30px;
     /* margin-left: -250px; */
 }
@@ -192,7 +193,7 @@ body{
     margin-top: 110px;
     padding: 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     overflow-x: hidden;
@@ -200,6 +201,10 @@ body{
 
 .main-1 .main-1-1 img {
     border-radius: 10px;
+}
+
+.main-1-1{
+    margin: 5%;
 }
 
 .main-1-2 h3 {
