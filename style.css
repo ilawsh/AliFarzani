@@ -165,12 +165,6 @@ body{
     animation: moveright 1.5s linear forwards;
 }
 
-.left-side-sec h1 i {
-    display: none;
-    bottom: 5%;
-    position: absolute;
-    animation: react 3s infinite alternate;
-}
 
 .right-side-sec {
     opacity: 0;
@@ -189,17 +183,6 @@ body{
     100%{
         opacity: 1;
         transform: translate(0px);
-    }
-}
-
-@keyframes react {
-    0%{
-        transform: rotate(120deg);
-        right: 0;
-    }
-    100%{
-        transform: rotate(0deg);
-        right: 50px;
     }
 }
 
