@@ -313,3 +313,12 @@ body{
     transform: scale(1.2);
     color: black;
 }
+
+
+.close-menu2{
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    z-index: -1;
+    display: none;
+}

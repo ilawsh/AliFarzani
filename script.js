@@ -7,12 +7,15 @@ const cancelBTN = document.querySelector('#x')
 const bgm = document.querySelector('#bgm')
 const Nothing = document.querySelector('.nothing')
 const leftsec = document.querySelector('.left-side-sec')
+const CancelDIV = document.querySelector('.close-menu2')
 
 function showmenu (){
     resmenudiv.style.width = 70 + '%'
     HeaderSec.style.filter = 'blur(2px)'
     SectionSec.style.filter = 'blur(2px)'
     SectionSec2.style.filter = 'blur(2px)'
+    CancelDIV.style.display = 'block'
+    CancelDIV.style.zIndex = 1
 }
 
 
@@ -21,20 +24,24 @@ cancelBTN.addEventListener('click' , function (){
     HeaderSec.style.filter = 'blur(0px)'
     SectionSec.style.filter = 'blur(0px)'
     SectionSec2.style.filter = 'blur(0px)'
+    CancelDIV.style.display = 'none'
 })
 
 resmenudiv.addEventListener('click' , () => {
     resmenudiv.style.width = 0 + '%'
     HeaderSec.style.filter = 'blur(0px)'
     SectionSec.style.filter = 'blur(0px)'
-    SectionSec2.style.filter = 'blur(0px)'   
+    SectionSec2.style.filter = 'blur(0px)' 
+    CancelDIV.style.display = 'none'  
 })
 
-leftsec.addEventListener('click' , () => {
+
+CancelDIV.addEventListener('click' , () => {
     resmenudiv.style.width = 0 + '%'
     HeaderSec.style.filter = 'blur(0px)'
     SectionSec.style.filter = 'blur(0px)'
-    SectionSec2.style.filter = 'blur(0px)'   
+    SectionSec2.style.filter = 'blur(0px)'
+    CancelDIV.style.display = 'none'
 })
 
 resMenuicon.addEventListener('click' , showmenu )
